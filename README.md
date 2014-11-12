@@ -14,16 +14,28 @@ in order to use this tool you have to do the following:
   top.name = "top";
   top.regX = -stage.width/2;
   top.regY = -stage.height/2;
-  SeatingChartBuilder.stage.addChild(top);
+  stage.addChildAt(top,0);
 ```
 
   
 2- add the transform tool inside the top layer as the follwing:
 
 ```
- var top = SeatingChartBuilder.stage.getChildByName("top");
  var selectTool = new createjs.util.FreeTranformTool();
  selectTool.name = "transform";
  top.addChildAt(selectTool, 0);
  ```
-  
+3- to select any object for example when the user click on that object as the following:
+```
+ object.addEventListener("click", function (evt) {
+      selectTool.select(evt.currentTarget,stage);
+  });
+```
+4- to unselect object  for example when the user click on the stage as the following:
+```
+background.addEventListener("click", function () {
+        selectTool.unselect();
+});
+```
+
+
