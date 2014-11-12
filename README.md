@@ -33,8 +33,8 @@ in order to use this tool you have to do the following:
 ```
 4- to unselect object  for example when the user click on the stage as the following:
 ```
-background.addEventListener("click", function () {
-        selectTool.unselect();
+stage.addEventListener("click", function () {
+    selectTool.unselect();
 });
 ```
 
