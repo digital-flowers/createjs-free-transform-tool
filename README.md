@@ -7,6 +7,7 @@ this tool has the follwing features:
 - rotateTool
 
 in order to use this tool you have to do the following:
+
 1- add a new layer to your stage in top of everything as the follwing:
 
 ```
