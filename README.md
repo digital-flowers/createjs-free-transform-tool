@@ -12,8 +12,6 @@ in order to use this tool you have to do the following:
 ```
   var top = new createjs.Container();
   top.name = "top";
-  top.regX = -stage.width/2;
-  top.regY = -stage.height/2;
   stage.addChildAt(top,0);
 ```
 
