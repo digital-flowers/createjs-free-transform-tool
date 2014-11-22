@@ -12,7 +12,7 @@ in order to use this tool you have to do the following:
 ```
   var top = new createjs.Container();
   top.name = "top";
-  stage.addChildAt(top,0);
+  stage.addChild(top);
 ```
 
   
@@ -21,7 +21,7 @@ in order to use this tool you have to do the following:
 ```
  var selectTool = new createjs.util.FreeTranformTool();
  selectTool.name = "transform";
- top.addChildAt(selectTool, 0);
+ top.addChild(selectTool);
  ```
 3- to select any object for example when the user click on that object as the following:
 ```
